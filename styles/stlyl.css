@@ -1,0 +1,73 @@
+body{
+    background-image:  url(/images/Planet_Website.gif)  ;
+}
+header{
+    margin-top: 200px;
+    font-family: Inconsolata, Arial;
+}
+.dws-menu *{
+    margin: 0;
+    padding: 0;
+}
+.dws-menu ul,
+.dws-menu ol{
+    list-style: none;
+}
+.dws-menu > ul{
+   display: flex;
+    justify-content: center;
+}
+.dws-menu > ul li a {
+    display: block;
+    background: rgb(91,77,187);
+    background: linear-gradient(0deg, rgba(91,77,187,1) 0%, rgba(231,165,226,1) 100%);
+    padding: 15px 30px 15px 40px;
+    font-size: 14px;
+    color: #304960;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+.dws-menu > ul li{
+    position: relative ;
+    border-right: 1px solid #304960;
+}
+.dws-menu > ul li:first-child{
+   border-left: 1px solid #304960;
+
+}
+.dws-menu > ul li:last-child{
+    border-right: 1px solid #304960;
+
+}
+.dws-menu li a:hover{
+    background: rgba(91, 77, 187, 0.5);;
+
+    color: #b2c2cf;
+    box-shadow: 1px 5px 10px -5px black;
+    transition: all 0.3s ease;
+}
+
+/*sub menu*/
+.dws-menu li ul{
+    position: absolute;
+    min-width: 150px;
+    display: none;
+}
+.dws-menu li > ul li{
+    border: 1px solid #304960;
+}
+.dws-menu li > ul li a{
+    padding: 10px;
+    text-transform: none;
+    color: #e7a5e2;
+    background: #5b4dbb;
+}
+.dws-menu li > ul li ul{
+    position: absolute;
+    right: -150px;
+    top: 0;
+}
+.dws-menu li:hover >ul{
+    display: block;
+}
